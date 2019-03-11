@@ -1,10 +1,12 @@
 # Polarisation Switch Control System
 Code used to control the polarisation switch for my Wimo X-Quads.
 
-Using a 8 channel 12v relay usb board and a Arm processor, system has two parts server which interacts with the relay board and a client that acts as the GUI interface.
+Using a 4 channel 12v relay usb board and a Arm processor, system has two parts server which interacts with the relay board and a client that acts as the GUI interface.
+
+Made using Python Flask for the backend and VueJS on the frontend.
 
 ## Polarisation Options
-* Horizonal 
+* Horizontal 
 * Vertical
 * RHCP
 * LHCP
