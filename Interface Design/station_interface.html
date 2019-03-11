@@ -7,20 +7,21 @@
   <style>
   
     body {
-        background-color: #2c2a35;
+        background-color: #171d22;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #b6a9d7;
+        color: #d8e0e4;
+        font-size: 18px;
     }
 
     button {
-        background-color: #24222c;
-        border-color: #6a667b;
+        background-color: #36454f;
+        border-color: #4b5f6d;
         border-style: solid;
         border-width: 1px;
-        color: #c494ca;
+        color: #c1d4c8;
         font-weight: bold;
         width: 100%;
         margin-bottom: 10px;
@@ -29,7 +30,8 @@
     }
 
     button:hover {
-        background-color: #6c5f8b;
+        background-color: #556d7c;
+        cursor: pointer;
     }
 
     .button_active {
@@ -37,24 +39,31 @@
         color: #ffffff;
     }
 
+    p {
+    	color: #7b96a4;
+    	font-size: 10px;
+    }
+
   </style>
   <body>
   
     <h2>2m X-Quad</h2>
-    <button type="button" value="2m_horizontal">Horizonal</button>
+    <button type="button" value="2m_horizontal">Horizontal</button>
     <button type="button" value="2m_vertical">Vertical</button>
     <button type="button" class="button_active" value="2m_rhcp">RHCP</button>
     <button type="button" value="2m_lhcp">LHCP</button>
 
     <h2>70cm X-Quad</h2>
-    <button type="button" value="70cm_horizontal">Horizonal</button>
+    <button type="button" value="70cm_horizontal">Horizontal</button>
     <button type="button" value="70cm_vertical">Vertical</button>
     <button type="button" class="button_active" value="70cm_rhcp">RHCP</button>
     <button type="button" value="70cm_lhcp">LHCP</button>
 
-    <h2>Other</h2>
+    <!-- <h2>Other</h2>
     <button type="button" value="10m_preamp">10m Preamp</button>
-    <button type="button" class="button_active" value="rotator_power">Rotator Power</button>
+    <button type="button" class="button_active" value="rotator_power">Rotator Power</button> -->
+
+    <p>System Uptime: #Insert#</p>
 
   </body>
 </html>
