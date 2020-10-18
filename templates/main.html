@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+   <title>AMSAT Polarisation Switch</title>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.jss" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h2 style="font-size: 1.8rem;">Polarisation Switch</h2>
+		<div class="row">
+			<div class="col-12">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<a href="" class="btn btn-light" role="button" style="width: 60px;">2m</a>
+					
+					{% if message == "h" %}
+						<a href="/phase/2m/h" class="btn btn-info" role="button">Horizontal</a>
+					{% else %}
+						<a href="/phase/2m/h" class="btn btn-outline-info" role="button">Horizontal</a>
+					{% endif %}
+
+					{% if message == "v" %}
+						<a href="/phase/2m/v" class="btn btn-info" role="button">Vertical</a>
+					{% else %}
+						<a href="/phase/2m/v" class="btn btn-outline-info" role="button">Vertical</a>
+					{% endif %}
+
+					{% if message == "rhcp" %}
+						<a href="/phase/2m/rhcp" class="btn btn-info" role="button">RHCP</a>
+					{% else %}
+						<a href="/phase/2m/rhcp" class="btn btn-outline-info" role="button">RHCP</a>
+				 	{% endif %}
+
+					{% if message == "lhcp" %}
+						<a href="/phase/2m/lhcp" class="btn btn-info" role="button">LHCP</a>
+					{% else %}
+						<a href="/phase/2m/lhcp" class="btn btn-outline-info" role="button">LHCP</a>
+					{% endif %}
+				</div>
+			</div>
+
+			<div class="col-12" style="margin-top: 5px;">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<a href="" class="btn btn-light" role="button" style="width: 60px;">70cm</a>
+
+					{% if vartwo == "h" %}
+						<a href="/70cm/h" class="btn btn-info" role="button">Horizontal</a>
+					{% else %}
+						<a href="/70cm/h" class="btn btn-outline-info" role="button">Horizontal</a>
+					{% endif %}
+
+					{% if vartwo == "v" %}
+						<a href="/70cm/v" class="btn btn-info" role="button">Vertical</a>
+					{% else %}
+						<a href="/70cm/v" class="btn btn-outline-info" role="button">Vertical</a>
+					{% endif %}
+
+					{% if vartwo == "rhcp" %}
+						<a href="/70cm/rhcp" class="btn btn-info" role="button">RHCP</a>
+					{% else %}
+						<a href="/70cm/rhcp" class="btn btn-outline-info" role="button">RHCP</a>
+					{% endif %}
+
+					{% if vartwo == "lhcp" %}
+						<a href="/70cm/lhcp" class="btn btn-info" role="button">LHCP</a>
+					{% else %}
+						<a href="/70cm/lhcp" class="btn btn-outline-info" role="button">LHCP</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
