@@ -1,9 +1,7 @@
 # Polarisation Switch Control System
-Code used to control the polarisation switch for my Wimo X-Quads.
+Code used to control the polarisation switch for my Wimo X-Quads using a [4 Channel Relay Raspberry Pi Hat](https://amzn.to/311bw4H)
 
-Using a 4 channel 12v relay usb board and a Arm processor, system has two parts server which interacts with the relay board and a client that acts as the GUI interface.
-
-Made using Python Flask for the backend and VueJS on the frontend.
+Made using Python Flask for the web server functions.
 
 ## Polarisation Options
 * Horizontal 
